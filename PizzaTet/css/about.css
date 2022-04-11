@@ -1,0 +1,67 @@
+.about{
+	padding-top: 80px;
+}
+.about__inner{
+	display: grid;
+	min-height: 320px;
+	grid-template-columns: 1fr 1fr;
+	color: white;
+	background: linear-gradient(39deg, rgba(23,0,65,0.8) 0%, rgba(11,0,36,0.8) 100%);
+	align-items: center;
+	border-radius: 5px;
+}
+.about__img{
+	background: url(../images/pizza-about.jpg) center no-repeat;
+	background-color: goldenrod;
+	background-size: cover;
+	width: 100%;
+	height: 320px;
+}
+.about__content{
+	padding: 10px 20px;
+}
+.about__title{
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.about__text{
+	line-height: 23px;
+}
+.about__text p{
+	padding: 5px 0;
+}
+@media (max-width:900px) {
+	.about__inner{
+		grid-template-columns: 1fr;
+		background: none;
+	}
+	.about__content{
+		position: absolute;
+		padding: 0 70px;		
+	}
+	.about__title{
+		text-align: left;
+		margin-bottom: 7px;
+	}
+	.about__img{
+		filter: brightness(28%);
+	}
+}
+@media (max-width:700px) {
+	.about__content{
+		padding: 0 40px;
+	}
+	.about__title{
+		text-align: left;		
+	}
+	.about__text{
+		line-height: 20px;
+		font-size: 14px;
+	}
+} 
+@media (max-width:400px) {
+	.about__content{
+		padding: 0 20px;
+	}
+} 
