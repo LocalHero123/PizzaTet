@@ -21,6 +21,7 @@ main{
 .tel{
 	font-size: 20px;
 	color: rgb(247, 224, 160);
+	text-decoration: underline;
 }
 .top__about-us{
 	padding: 35px 0px;
@@ -68,5 +69,10 @@ main{
 	}
 	.top__about-us li::after{
 		background-size: 19px;
+	}
+	.top__about-us li{
+		margin-top: 15px;
+		position: relative;
+		padding-left: 24px;
 	}
 }

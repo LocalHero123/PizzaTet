@@ -35,8 +35,7 @@
 
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li><a href="#pizza">Пицца</a></li>
-                        <li><a href="#beverages">Напитки</a></li>
+                        <li><a href="#products">Меню</a></li>
                         <li><a href="#about">О нас</a></li>
                         <li><a href="#contacts">Контакты</a></li>
                         <li><a href="#interior">Интерьер</a></li>
@@ -72,10 +71,16 @@
             </div>
         </section>
 
-        <div class="products">
+        <div class="products" id="products">
             <div class="container">
+                <h2 style="margin-bottom: 15px;" class="title">Меню</h2>
+
+                <input class="products__tabs" type="radio" name="tab" id="tab-1" checked>
+                <input class="products__tabs" type="radio" name="tab" id="tab-2">
+                <label class="products__tabs-label products__tabs-label-1" for="tab-1">Пицца</label>
+                <label class="products__tabs-label products__tabs-label-2" for="tab-2">Напитки</label>
+
                 <section id="pizza">
-                    <h2 class="title">Пицца</h2>
                     <div class="products__items">
                         <article class="products__item">
                             <div class="product">
@@ -156,7 +161,6 @@
                 </section>
 
                 <section id="beverages">
-                    <h2 class="title">Напитки</h2>
                     <div class="products__items">
                         <article class="products__item">
                             <div class="product">
