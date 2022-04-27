@@ -22,10 +22,18 @@
 .products section{
 	display: none;
 }
-#tab-1:checked ~ .products__tabs-label-1{background-color: rgba(117, 0, 0, 0.27);}
+#tab-1:checked ~ .products__tabs-label-1{
+	border: 1px solid rgb(255, 169, 8); 
+	color: rgb(255, 169, 8); 
+	background: transparent;
+}
 #tab-1:checked ~ #pizza{display: block;}
 
-#tab-2:checked ~ .products__tabs-label-2{background-color: rgba(117, 0, 0, 0.27);}
+#tab-2:checked ~ .products__tabs-label-2{
+	border: 1px solid rgb(255, 169, 8); 
+	color: rgb(255, 169, 8); 
+	background: transparent;
+}
 #tab-2:checked ~ #beverages{display: block;}
 
 .products__items{
