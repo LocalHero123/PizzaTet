@@ -1,0 +1,78 @@
+main{
+	padding: 40px 0 0 0;
+}
+.top{
+	position: relative;
+	background: url(../images/pizza-top.jpg) no-repeat center top;
+	background-size: 1500px;
+}
+.top__inner{
+	padding: 70px 0px;
+	color: rgb(255, 255, 255);
+}
+.top__title{	
+	font-size: 40px;
+}
+.adress{
+	font-size: 20px;
+	margin-top: 15px;	
+	margin-bottom: 23px;
+}
+.tel{
+	font-size: 20px;
+	color: rgb(247, 224, 160);
+	text-decoration: underline;
+}
+.top__about-us{
+	padding: 35px 0px;
+	font-size: 20px;
+	margin-top: -15px;
+}
+.top__about-us li{
+	margin-top: 15px;
+	position: relative;
+	padding-left: 28px;
+}
+.top__about-us li::after{
+	content: '';
+	position: absolute;
+	background: url(../images/icons/checkicon.png) left no-repeat;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 22px;
+}
+@media (max-width:1500px) {
+	.top{
+		background-size: cover;
+	}
+}
+@media (max-width:1250px) {
+	.top__inner{
+		padding: 70px 35px;
+	}
+}
+@media (max-width:575px) {
+	.top__inner{
+		padding: 40px 28px;
+	}
+	.top__title{	
+		font-size: 30px;
+	}
+	.top__about-us{
+		padding: 35px 0px;
+		font-size: 18px;
+	}
+	.adress{
+		font-size: 18px;
+	}
+	.top__about-us li::after{
+		background-size: 19px;
+	}
+	.top__about-us li{
+		margin-top: 15px;
+		position: relative;
+		padding-left: 24px;
+	}
+}

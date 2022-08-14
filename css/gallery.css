@@ -1,0 +1,22 @@
+.gallery{
+	margin-top: 5px;
+}
+.gallery__title{
+	margin-top: -20px;
+}
+.gallery__img{
+	text-align: center;
+}
+.gallery__img img{
+	max-width: 100%;
+	width: 300px;
+	height: 400px;
+}
+.swiper-container{
+	position: relative;
+	overflow: hidden;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+	color: white;
+}

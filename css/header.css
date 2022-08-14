@@ -1,0 +1,142 @@
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	box-shadow: 0 0 10px rgb(141, 141, 141);
+}
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 40px;
+	padding: 5px 0;
+} 
+.logo{
+	color: white;
+	background: url(../images/pizza-logo.png) left no-repeat;
+	background-size: 20px;
+	padding-left: 25px;
+	font-size: 21px;
+	font-weight: 500;	
+	z-index: 3;
+}
+.header__burger{
+	display: none;
+	background: 0;
+	border: 0;
+}
+.header__inner:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.995);
+	z-index: 2;
+}
+.menu{
+	z-index: 2;
+}
+.menu__list{
+	display: flex;
+}
+.menu__list li a{
+	margin: 0 20px;		
+	font-size: 19px;
+	transition: border-bottom 0.4s;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+	color: white;
+}
+.menu__list li a:hover{
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width:1250px) {
+	.header__inner{
+		padding: 5px 10px;
+	}
+}
+@media (max-width:900px){
+	.logo{
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+	}
+	.header__burger{
+		position: relative;
+		display: block;
+		width: 27px;
+		height: 20px;
+		z-index: 3;
+	}
+	.header__burger:before,
+	.header__burger:after{
+		content: '';
+		background-color: rgb(177, 177, 177);
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		left: 0;
+		transition: 0.3s;
+		border-radius: 3px;
+	}
+	.header__burger:before{
+		top: 0;
+	}
+	.header__burger span{
+		position: absolute;
+		background-color: rgb(177, 177, 177);
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: 0.3s;
+		border-radius: 3px;
+	}
+	.header__burger:after{
+		bottom: 0;
+	}
+	.header__burger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+	.menu.active{
+		left: 0;
+	}
+	.menu{
+		position: fixed;
+		left: -100%;
+		height: 100%;
+		top: 0;
+		transition: 0.3s;
+	}
+	.menu{
+		background-color: rgba(0, 0, 0);
+		overflow: auto;
+		padding-top: 50px;
+	}
+	.menu__list{
+		flex-direction: column;
+	}	
+	.menu__list li{
+		padding: 9px 0;
+	}
+	.header__inner:before{
+		z-index: 3;
+	}
+	.menu__list li a{
+		color: #fff;
+		display: inline-block;
+		width: 100%;
+	}
+}
